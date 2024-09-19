@@ -1,0 +1,116 @@
+{
+    "Name": "Kathryn Huff",
+    "Title": "Frontend Engineer",
+    "Location": "Arlington, VA",
+    "Contacts": [
+        {
+            "Type": "email",
+            "Value": ""
+        },
+        {
+            "Type": "phone",
+            "Value": "555-555-5555"
+        },
+        {
+            "Type": "linkedin",
+            "Value": "http://www.linkedin.com/in/kathrynhuff"
+        },
+        {
+            "Type": "github",
+            "Value": "http://www.github.com/kathrynhuff"
+        }
+        
+    ],
+    "Skills": [
+        {
+            "Category": "Languages",
+            "Items": [
+                "JavaScript",
+                "Python",
+                "Java",
+                "SQL",
+                "HTML",
+                "CSS"
+            ]
+        },
+        {
+            "Category": "Frameworks",
+            "Items": [
+                "React",
+                "Node.js",
+                "Express"
+            ]
+        },
+        {
+            "Category": "Databases",
+            "Items": [
+                "PostgreSQL",
+                "MongoDB"
+            ]
+        },
+        {
+            "Category": "Tools",
+            "Items": [
+                "Git",
+                "GCP"
+            ]
+        }
+    ],
+    "Experience": [
+        {
+            "Title": "Frontend Engineer",
+            "Company": "Company A",
+            "Location": "Arlington, VA",
+            "Dates": "2022 - Present",
+            "Description": "Developed and maintained frontend applications using React and Redux. Collaborated with backend engineers to design and implement RESTful APIs. Conducted code reviews and provided feedback to team members.",
+            "Highlights": [
+                "Developed and maintained frontend applications using React and Redux.",
+                "Collaborated with backend engineers to design and implement RESTful APIs.",
+                "Conducted code reviews and provided feedback to team members."
+            ]
+        },
+        {
+            "Title": "Software Engineer",
+            "Company": "Company B",
+            "Location": "Washington, DC",
+            "Dates": "2019 - 2022",
+            "Description": "Designed and implemented RESTful APIs using Node.js and Express. Developed frontend applications using React and Redux. Wrote unit and integration tests to ensure code quality and reliability.",
+            "Highlights": [
+                "Designed and implemented RESTful APIs using Node.js and Express.",
+                "Developed frontend applications using React and Redux.",
+                "Wrote unit and integration tests to ensure code quality and reliability."
+            ]
+        }
+    ],
+    "Education": [
+        {
+            "Degree": "Bachelor of Science",
+            "Major": "Computer Science",
+            "School": "University of Virginia",
+            "Location": "Charlottesville, VA",
+            "Dates": "2015 - 2019"
+        }
+    ],
+    "Projects": [
+        {
+            "Title": "Project A",
+            "Description": "Developed a web application that allows users to create and share recipes. Implemented user authentication and authorization using JWT tokens. Designed and implemented a RESTful API using Node.js and Express.",
+            "Highlights": [
+                "Developed a web application that allows users to create and share recipes.",
+                "Implemented user authentication and authorization using JWT tokens.",
+                "Designed and implemented a RESTful API using Node.js and Express."
+            ],
+            "Keywords": ["React", "Node.js", "Express", "JWT", "RESTful API"]
+        },
+        {
+            "Title": "Project B",
+            "Description": "Developed a web application that allows users to search for and save recipes. Integrated with a third-party API to retrieve recipe data. Implemented user authentication and authorization using Firebase Authentication.",
+            "Highlights": [
+                "Developed a web application that allows users to search for and save recipes.",
+                "Integrated with a third-party API to retrieve recipe data.",
+                "Implemented user authentication and authorization using Firebase Authentication."
+            ],
+            "Keywords": ["React", "Firebase Authentication", "Third-party API"]
+        }
+    ]
+}

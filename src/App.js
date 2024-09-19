@@ -7,7 +7,7 @@ function App() {
   const [loading, setLoading] = useState(true);
   //load resume from / of site using a request, we will move resume later. Use transition
   useEffect(() => {
-    fetch('./resume.json')
+    fetch('https://kahvilei.github.io/resume-2024/resume.json')
       .then((response) => response.json())
       .then((data) => {
         setResume(data);

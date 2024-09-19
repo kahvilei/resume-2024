@@ -1,0 +1,145 @@
+{
+    "Heading": {
+        "Name": "Kathryn Huff",
+        "Title": "Frontend Developer",
+        "Location": "Arlington, VA",
+        "Contacts": [
+            {
+                "Type": "phone",
+                "Value": "512-587-3265"
+            },
+            {
+                "Type": "email",
+                "Value": "kat@kathrynhuff.com"
+            },
+            {
+                "Type": "linkedin",
+                "Value": "LinkedIn"
+            },
+            {
+                "Type": "github",
+                "Value": "https://github.com/kahvilei"
+            }
+        ]
+    },
+    "Skills": [
+        {
+            "Category": "Programming Languages",
+            "Items": [
+                "Javascript/Typescript",
+                "C#",
+                "HTML/CSS",
+                "Python",
+                "PHP"
+            ]
+        },
+        {
+            "Category": "Frameworks and Libraries",
+            "Items": [
+                "ReactJS",
+                "NodeJS",
+                "ASP.NET",
+                "MongoDB (Mongoose)",
+                "SQL",
+                "GCP Datastore"
+            ]
+        },
+        {
+            "Category": "Software and platforms",
+            "Items": [
+                "Microsoft Azure",
+                "GCP & AWS Familiarity",
+                "Adobe Suite",
+                "Figma",
+                "Wordpress"
+            ]
+        },
+        {
+            "Category": "Miscellaneous",
+            "Items": [
+                "Pipeline development",
+                "Git/Github",
+                "REST API design",
+                "Database design"
+            ]
+        }
+    ],
+    "Experience": [
+        {
+            "Title": "Web Design and Digital Media Specialist",
+            "Company": "Farm Credit Bank of Texas",
+            "Location": "Austin, TX",
+            "Dates": "JAN. 2020 – SEPT. 2024",
+            "Description": "Multi-functional role managing bank sites, maintaining and developing new intranet applications, creating corporate event websites, and designing for all aspects of FCBT's online and internal identity.",
+            "Highlights": [
+                "Redesigned decades-old intranet and improved usability by replacing its outdated table and frame-based structure with an effective and responsive single-page application.",
+                "Developed a new internal HR website using Umbraco in place of the old HTML-based site, turning over management to HR staff and speeding up site changes.",
+                "Created an Umbraco-based site for event staff to post upcoming and past events, with the ability to share presentations from speakers.",
+                "Managed pipelines and repos in Azure DevOps for internal sites/resources."
+            ]
+        },
+        {
+            "Title": "Web Developer",
+            "Company": "Eric Jonsson School of Engineering and Computer Science, UTD",
+            "Location": "Dallas, TX",
+            "Dates": "SEPT. 2018 – JAN. 2020",
+            "Description": "Design, development, maintenance, and backend support of all school webpages.",
+            "Highlights": [
+                "Created new wordpress sites and single-page sites for staff and sub-departments.",
+                "Managed and updated previously created pages/sites.",
+                "Performed ongoing site maintenance."
+            ]
+        }
+    ],
+    "Education": [
+        {
+            "Degree": "Bachelor of Arts",
+            "Major": "Arts, Technology, and Emerging Communication",
+            "School": "The University of Texas at Dallas",
+            "Location": "Dallas, TX",
+            "Dates": "MAY 2019"
+        },
+        {
+            "Degree": "Minor",
+            "Major": "Computer Science",
+            "School": "The University of Texas at Dallas",
+            "Location": "Dallas, TX",
+            "Dates": "MAY 2019"
+        }
+    ],
+    "Projects": [
+        {
+            "Title": "Intranet Log Analytics Tool",
+            "Description": "Designed and developed an internal application that loads IIS log files from our Intranet server into a SQL database, and displays internal application traffic in a visually appealing and user-friendly Reactjs dashboard site.",
+            "Highlights": [
+                "Dashboards configurable via a json file, allowing trained users to add new visualizations with detailed customization features and filtering options.",
+                "Visualizations are interactive, and allow users to easily narrow a search by highlighting and clicking specific parts of the displayed line graphs, charts, and tables.",
+                "10 years of historical daily log data translated from our previous analytics tool."
+            ],
+            "Keywords": [
+                "C# (.NET Core)",
+                "API design",
+                "ReactJs",
+                "SQL",
+                "Database design",
+                "Data visualization"
+            ]
+        },
+        {
+            "Title": "Events Website",
+            "Description": "Designed and developed an internal website available to association partner companies that listed all Farm Credit System and Farm Credit Bank of Texas events, replacing the old HTML page and introducing several new features.",
+            "Highlights": [
+                "Custom-built site search that highlights commonly sought-after information, such as presentations and upcoming events.",
+                "Hotel page features an interactive map with up-to-the minute drive time and directions to FCBT headquarters from the user's selected hotel, provided by the Google Maps API.",
+                "Event schedule page includes filters for organization and year, with optional features for each to link to a registration page or hotel information."
+            ],
+            "Keywords": [
+                "Umbraco",
+                "C# (.NET Core)",
+                "Google Maps API",
+                "CSS",
+                "Web and user interface design"
+            ]
+        }
+    ]
+}

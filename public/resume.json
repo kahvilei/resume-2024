@@ -1,26 +1,27 @@
 {
-    "Name": "Kathryn Huff",
-    "Title": "Frontend Engineer",
-    "Location": "Arlington, VA",
-    "Contacts": [
-        {
-            "Type": "email",
-            "Value": ""
-        },
-        {
-            "Type": "phone",
-            "Value": "555-555-5555"
-        },
-        {
-            "Type": "linkedin",
-            "Value": "http://www.linkedin.com/in/kathrynhuff"
-        },
-        {
-            "Type": "github",
-            "Value": "http://www.github.com/kathrynhuff"
-        }
-        
-    ],
+    "Heading": {
+        "Name": "Kathryn Huff",
+        "Title": "Frontend Engineer",
+        "Location": "Arlington, VA",
+        "Contacts": [
+            {
+                "Type": "email",
+                "Value": ""
+            },
+            {
+                "Type": "phone",
+                "Value": "555-555-5555"
+            },
+            {
+                "Type": "linkedin",
+                "Value": "http://www.linkedin.com/in/kathrynhuff"
+            },
+            {
+                "Type": "github",
+                "Value": "http://www.github.com/kathrynhuff"
+            }
+        ]
+    },
     "Skills": [
         {
             "Category": "Languages",
@@ -100,7 +101,13 @@
                 "Implemented user authentication and authorization using JWT tokens.",
                 "Designed and implemented a RESTful API using Node.js and Express."
             ],
-            "Keywords": ["React", "Node.js", "Express", "JWT", "RESTful API"]
+            "Keywords": [
+                "React",
+                "Node.js",
+                "Express",
+                "JWT",
+                "RESTful API"
+            ]
         },
         {
             "Title": "Project B",
@@ -110,7 +117,11 @@
                 "Integrated with a third-party API to retrieve recipe data.",
                 "Implemented user authentication and authorization using Firebase Authentication."
             ],
-            "Keywords": ["React", "Firebase Authentication", "Third-party API"]
+            "Keywords": [
+                "React",
+                "Firebase Authentication",
+                "Third-party API"
+            ]
         }
     ]
 }

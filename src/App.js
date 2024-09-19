@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
 import './App.css';
+import Resume from './pages/resume';
 
 function App() {
+  const [resume, setResume] = useState({});
+  const [loading, setLoading] = useState(true);
+  //load resume from / of site using a request, we will move resume later. Use transition
+  useEffect(() => {
+    fetch('/resume.json')
+      .then((response) => response.json())
+      .then((data) => {
+        setResume(data);
+        setLoading(false);
+      });
+  }, []);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Resume resume={resume} />
     </div>
   );
 }

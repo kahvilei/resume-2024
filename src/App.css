@@ -178,6 +178,11 @@ a:hover {
   align-items: center;
 }
 
+.contact.list {
+  display: flex;
+  gap: 20px;
+}
+
 @media (max-width: 768px) {
   .page-columns {
     flex-direction: column;

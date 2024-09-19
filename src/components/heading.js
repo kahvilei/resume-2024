@@ -7,7 +7,7 @@ const Heading = ({ heading }) => {
     <div className='heading'>
       <h1>{heading.Name}</h1>
       <h2>{heading.Title}</h2>
-      <p>{heading.Location}</p>
+      <h4>{heading.Location}</h4>
       <Contacts contacts={heading.Contacts} />
     </div>
   );

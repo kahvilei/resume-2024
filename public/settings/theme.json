@@ -29,7 +29,7 @@
     },
     "type": {
       "fonts": {
-        "body": "'Nunito', sans-serif",
+        "text": "'Nunito', sans-serif",
         "heading": "'Nunito', sans-serif"
       }
     },
@@ -50,7 +50,7 @@
         "color": "--text-color",
         "lineHeight": 1,
         "margin": "0",
-        "fontFamily": "--font-family-body"
+        "fontFamily": "--font-family-text"
       },
       "h1": {
         "size": "2.5rem",

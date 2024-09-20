@@ -74,10 +74,10 @@
         },
         "type": {
             "fonts": {
-                "body": {
+                "text": {
                     "default": "Arial, sans-serif",
-                    "uiName": "Body Font",
-                    "cssName": "--font-family-body",
+                    "uiName": "Text Font",
+                    "cssName": "--font-family-text",
                     "description": "The main font of the page"
                 },
                 "heading": {
@@ -172,7 +172,7 @@
                 "description": "The margin of the body"
             },
             "fontFamily": {
-                "default": "--font-family-body",
+                "default": "--font-family-text",
                 "uiName": "Font Family",
                 "cssName": "--font-family-body",
                 "description": "The font family of the body"
@@ -605,7 +605,7 @@
             },
             "type": {
                 "fonts": {
-                    "body": "'Roboto', sans-serif",
+                    "text": "'Roboto', sans-serif",
                     "heading": "'Montserrat', sans-serif"
                 }
             },
@@ -725,7 +725,7 @@
             },
             "type": {
                 "fonts": {
-                    "body": "'Open Sans', sans-serif",
+                    "text": "'Open Sans', sans-serif",
                     "heading": "'Poppins', sans-serif"
                 }
             },
@@ -846,7 +846,7 @@
             },
             "type": {
                 "fonts": {
-                    "body": "'Lato', sans-serif",
+                    "text": "'Lato', sans-serif",
                     "heading": "'Playfair Display', serif"
                 }
             },

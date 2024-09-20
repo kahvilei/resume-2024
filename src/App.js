@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import './ThemeEditor.css';
 import Resume from './pages/resume';
 import ThemeProvider from './providers/themeProvider';
 import ThemeEditor from './editors/themeEditor';

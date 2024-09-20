@@ -1,6 +1,10 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
 
+.App{
+  display:flex;
+}
+
 body {
   font-family: var(--font-family-body);
   font-size: var(--font-size-body);

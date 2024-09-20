@@ -1,3 +1,136 @@
 {
-    
-}
+    "colors": {
+      "palette": {
+        "color1": "#1e2132",
+        "color2": "#181b27",
+        "color3": "#11131c",
+        "color4": "#bec2da",
+        "color5": "#a64d79",
+        "color6": "#da98b9",
+        "color7": "#f2d3e7",
+        "color8": "#fff4f0",
+        "color9": "#adf5d3",
+        "color10": "#4decf1",
+        "color11": "#3A3F58",
+        "color12": "#4E5579"
+      },
+      "general": {
+        "bgColor": "--color-palette-color1",
+        "bgColorSecondary": "--color-palette-color2",
+        "bgColorTertiary": "--color-palette-color3",
+        "textColor": "--color-palette-color4",
+        "linkColor": "--color-palette-color10",
+        "headingColor": "--color-palette-color5",
+        "tagBg": "--color-palette-color11",
+        "borderColor": "--color-palette-color12",
+        "accentColor": "--color-palette-color10",
+        "accentColor2": "--color-palette-color9"
+      }
+    },
+    "type": {
+      "fonts": {
+        "body": "'Nunito', sans-serif",
+        "heading": "'Nunito', sans-serif"
+      }
+    },
+    "spacing": {
+      "headingsMargin": "0.5rem 0",
+      "paragraphMargin": "0.5rem 0",
+      "listMargin": "0.5rem 0",
+      "sectionsMargin": "1rem 0",
+      "sectionsPadding": "1rem",
+      "itemPadding": "0.5rem"
+    },
+    "elements": {
+      "body": {
+        "size": "1rem",
+        "weight": 400,
+        "style": "normal",
+        "case": "none",
+        "color": "--text-color",
+        "lineHeight": 1,
+        "margin": "0",
+        "fontFamily": "--font-family-body"
+      },
+      "h1": {
+        "size": "2.5rem",
+        "weight": 700,
+        "style": "italic",
+        "case": "uppercase",
+        "color": "--heading-color",
+        "lineHeight": 1,
+        "margin": "--headings-margin",
+        "fontFamily": "--font-family-heading"
+      },
+      "h2": {
+        "size": "1.6rem",
+        "weight": 600,
+        "style": "normal",
+        "case": "uppercase",
+        "color": "--heading-color",
+        "lineHeight": 1,
+        "margin": "--headings-margin",
+        "fontFamily": "--font-family-heading"
+      },
+      "h3": {
+        "size": "1.4rem",
+        "weight": 600,
+        "style": "normal",
+        "case": "none",
+        "color": "--heading-color",
+        "lineHeight": 1,
+        "margin": "--headings-margin",
+        "fontFamily": "--font-family-heading"
+      },
+      "h4": {
+        "size": "1.2rem",
+        "weight": 400,
+        "style": "italic",
+        "case": "none",
+        "color": "--heading-color",
+        "lineHeight": 1,
+        "margin": "--headings-margin",
+        "fontFamily": "--font-family-heading"
+      },
+      "h5": {
+        "size": "1rem",
+        "weight": 800,
+        "style": "normal",
+        "case": "uppercase",
+        "color": "--heading-color",
+        "lineHeight": 1,
+        "margin": "--headings-margin",
+        "fontFamily": "--font-family-heading"
+      },
+      "p": {
+        "size": "1rem",
+        "weight": 400,
+        "style": "normal",
+        "case": "none",
+        "color": "--text-color",
+        "lineHeight": 1.6,
+        "margin": "--paragraph-margin",
+        "fontFamily": "--font-family-body"
+      },
+      "link": {
+        "size": "1rem",
+        "weight": 400,
+        "style": "normal",
+        "case": "none",
+        "color": "--link-color",
+        "lineHeight": 1.6,
+        "margin": "--paragraph-margin",
+        "fontFamily": "--font-family-body"
+      },
+      "list": {
+        "size": "1rem",
+        "weight": 400,
+        "style": "normal",
+        "case": "none",
+        "color": "--text-color",
+        "lineHeight": 1.6,
+        "margin": "--list-margin",
+        "fontFamily": "--font-family-body"
+      }
+    }
+  }

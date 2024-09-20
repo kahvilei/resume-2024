@@ -1,0 +1,90 @@
+:root {
+    --editor-bg: #f5f5f5;
+    --editor-text: #333;
+    --editor-border: #ccc;
+    --editor-input-bg: #fff;
+    --editor-input-border: #ddd;
+    --editor-button-bg: #007bff;
+    --editor-button-text: #fff;
+    --editor-button-hover-bg: #0056b3;
+  }
+  
+  .theme-editor {
+    background-color: var(--editor-bg);
+    color: var(--editor-text);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .editor-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .editor-nav button {
+    background-color: var(--editor-button-bg);
+    color: var(--editor-button-text);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .editor-nav button:hover {
+    background-color: var(--editor-button-hover-bg);
+  }
+  
+  .editor-content {
+    background-color: var(--editor-input-bg);
+    border: 1px solid var(--editor-border);
+    border-radius: 4px;
+    padding: 20px;
+  }
+  
+  .subsection {
+    margin-bottom: 30px;
+  }
+  
+  .subsection h3 {
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--editor-border);
+    padding-bottom: 5px;
+  }
+  
+  .color-input,
+  .text-input,
+  .select-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .color-input label,
+  .text-input label,
+  .select-input label {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .color-input input,
+  .text-input input,
+  .select-input select {
+    flex: 2;
+    padding: 5px;
+    border: 1px solid var(--editor-input-border);
+    border-radius: 4px;
+  }
+  
+  .element-style {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid var(--editor-border);
+    border-radius: 4px;
+  }
+  
+  .element-style h4 {
+    margin-bottom: 10px;
+  }

@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import Resume from './pages/resume';
+import ThemeProvider from './providers/themeProvider';
+import ThemeEditor from './editors/themeEditor';
 
 function App() {
   const [resume, setResume] = useState({});
@@ -20,15 +22,12 @@ function App() {
           fetch(`${baseURL}/settings/theme.json`),
           fetch(`${baseURL}/settings/config.json`)
         ]);
-
         if (!resumeResponse.ok || !themeResponse.ok || !configResponse.ok) {
           throw new Error('Failed to fetch data');
         }
-
         const resumeData = await resumeResponse.json();
         const themeData = await themeResponse.json();
         const configData = await configResponse.json();
-
         setResume(resumeData);
         setTheme(themeData);
         setConfig(configData);
@@ -38,21 +37,23 @@ function App() {
         setLoading(false);
       }
     };
-
     fetchData();
   }, []);
 
   if (loading) {
     return <div>Loading...</div>;
   }
-
   if (error) {
     return <div>Error: {error}</div>;
   }
+
   return (
-    <div className="App">
-      <Resume resume={resume} />
-    </div>
+    <ThemeProvider theme={theme} config={config}>
+      <div className="App">
+        <ThemeEditor theme={theme} setTheme={setTheme} config={config} />
+        <Resume resume={resume} />
+      </div>
+    </ThemeProvider>
   );
 }
 

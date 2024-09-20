@@ -1,3 +1,945 @@
 {
-    
+    "themingSettings": {
+        "colors": {
+            "palette": {
+                "defaultValue": {
+                    "white": "#ffffff",
+                    "light": "#f0f0f0",
+                    "black": "#333333",
+                    "blue": "#0066cc"
+                }
+            },
+            "general": {
+                "bgColor": {
+                    "default": "color-palette-white",
+                    "uiName": "Background Color",
+                    "cssName": "--background-color",
+                    "description": "The main background color of the page"
+                },
+                "bgColorSecondary": {
+                    "default": "--color-palette-light",
+                    "uiName": "Secondary Background Color",
+                    "cssName": "--background-color-secondary",
+                    "description": "The secondary background color of the page"
+                },
+                "bgColorTertiary": {
+                    "default": "--color-palette-light",
+                    "uiName": "Tertiary Background Color",
+                    "cssName": "--background-color-tertiary",
+                    "description": "The tertiary background color of the page"
+                },
+                "textColor": {
+                    "default": "--color-palette-black",
+                    "uiName": "Text Color",
+                    "cssName": "--text-color",
+                    "description": "The main text color"
+                },
+                "linkColor": {
+                    "default": "--color-palette-blue",
+                    "uiName": "Link Color",
+                    "cssName": "--link-color",
+                    "description": "The color of links"
+                },
+                "headingColor": {
+                    "default": "--color-palette-blue",
+                    "uiName": "Heading Color",
+                    "cssName": "--heading-color",
+                    "description": "The color of headings"
+                },
+                "tagBg": {
+                    "default": "--color-palette-blue",
+                    "uiName": "Tag Background Color",
+                    "cssName": "--tag-background-color",
+                    "description": "The background color of tags"
+                },
+                "borderColor": {
+                    "default": "--color-palette-black",
+                    "uiName": "Border Color",
+                    "cssName": "--border-color",
+                    "description": "The color of borders"
+                },
+                "accentColor": {
+                    "default": "--color-palette-blue",
+                    "uiName": "Accent Color",
+                    "cssName": "--accent-color",
+                    "description": "The main accent color"
+                },
+                "accentColor2": {
+                    "default": "--color-palette-blue",
+                    "uiName": "Secondary Accent Color",
+                    "cssName": "--accent-color-2",
+                    "description": "The secondary accent color"
+                }
+            }
+        },
+        "type": {
+            "fonts": {
+                "body": {
+                    "default": "Arial, sans-serif",
+                    "uiName": "Body Font",
+                    "cssName": "--font-family-body",
+                    "description": "The main font of the page"
+                },
+                "heading": {
+                    "default": "Arial, sans-serif",
+                    "uiName": "Heading Font",
+                    "cssName": "--font-family-heading",
+                    "description": "The font of headings"
+                }
+            }
+        },
+        "spacing": {
+            "headingsMargin": {
+                "default": "0.67em 0",
+                "uiName": "Headings Margin",
+                "cssName": "--headings-margin",
+                "description": "The default margin of headings"
+            },
+            "paragraphMargin": {
+                "default": "1em 0",
+                "uiName": "Paragraph Margin",
+                "cssName": "--paragraph-margin",
+                "description": "The default margin of paragraphs"
+            },
+            "listMargin": {
+                "default": "1em 0",
+                "uiName": "List Margin",
+                "cssName": "--list-margin",
+                "description": "The default margin of lists"
+            },
+            "sectionsMargin": {
+                "default": "1em 0",
+                "uiName": "Sections Margin",
+                "cssName": "--sections-margin",
+                "description": "The default margin of sections"
+            },
+            "sectionsPadding": {
+                "default": "1em",
+                "uiName": "Sections Padding",
+                "cssName": "--sections-padding",
+                "description": "The default padding of sections"
+            },
+            "itemPadding": {
+                "default": "0.5em",
+                "uiName": "Item Padding",
+                "cssName": "--item-padding",
+                "description": "The default padding of most elements on the page"
+            }
+        }
+    },
+    "elements": {
+        "body":{
+            "size": {
+                "default": "1rem",
+                "uiName": "Font Size",
+                "cssName": "--font-size-body",
+                "description": "The font size of the body"
+            },
+            "weight": {
+                "default": 400,
+                "uiName": "Font Weight",
+                "cssName": "--font-weight-body",
+                "description": "The font weight of the body"
+            },
+            "style": {
+                "default": "normal",
+                "uiName": "Font Style",
+                "cssName": "--font-style-body",
+                "description": "The font style of the body"
+            },
+            "case": {
+                "default": "none",
+                "uiName": "Case",
+                "cssName": "--text-case-body",
+                "description": "The text case of the body"
+            },
+            "color": {
+                "default": "--text-color",
+                "uiName": "Text Color",
+                "cssName": "--text-color-body",
+                "description": "The text color of the body"
+            },
+            "lineHeight": {
+                "default": 1.6,
+                "uiName": "Line Height",
+                "cssName": "--line-height-body",
+                "description": "The line height of the body"
+            },
+            "margin": {
+                "default": "0",
+                "uiName": "Margin",
+                "cssName": "--margin-body",
+                "description": "The margin of the body"
+            },
+            "fontFamily": {
+                "default": "--font-family-body",
+                "uiName": "Font Family",
+                "cssName": "--font-family-body",
+                "description": "The font family of the body"
+            }
+        },
+        "h1": {
+            "size": {
+                "default": "2.5rem",
+                "uiName": "Font Size",
+                "cssName": "--font-size-h1",
+                "description": "The font size of H1 elements"
+            },
+            "weight": {
+                "default": 700,
+                "uiName": "Font Weight",
+                "cssName": "--font-weight-h1",
+                "description": "The font weight of H1 elements"
+            },
+            "style": {
+                "default": "italic",
+                "uiName": "Font Style",
+                "cssName": "--font-style-h1",
+                "description": "The font style of H1 elements"
+            },
+            "case": {
+                "default": "none",
+                "uiName": "Case",
+                "cssName": "--text-case-h1",
+                "description": "The text case of H1 elements"
+            },
+            "color": {
+                "default": "--heading-color",
+                "uiName": "Text Color",
+                "cssName": "--text-color-h1",
+                "description": "The text color of H1 elements"
+            },
+            "lineHeight": {
+                "default": 1,
+                "uiName": "Line Height",
+                "cssName": "--line-height-h1",
+                "description": "The line height of H1 elements"
+            },
+            "margin": {
+                "default": "--headings-margin",
+                "uiName": "Margin",
+                "cssName": "--margin-h1",
+                "description": "The margin of H1 elements"
+            },
+            "fontFamily": {
+                "default": "--font-family-heading",
+                "uiName": "Font Family",
+                "cssName": "--font-family-h1",
+                "description": "The font family of H1 elements"
+            }
+        },
+        "h2": {
+            "size": {
+                "default": "1.6rem",
+                "uiName": "Font Size",
+                "cssName": "--font-size-h2",
+                "description": "The font size of H2 elements"
+            },
+            "weight": {
+                "default": 600,
+                "uiName": "Font Weight",
+                "cssName": "--font-weight-h2",
+                "description": "The font weight of H2 elements"
+            },
+            "style": {
+                "default": "normal",
+                "uiName": "Font Style",
+                "cssName": "--font-style-h2",
+                "description": "The font style of H2 elements"
+            },
+            "case": {
+                "default": "uppercase",
+                "uiName": "Case",
+                "cssName": "--text-case-h2",
+                "description": "The text case of H2 elements"
+            },
+            "color": {
+                "default": "--heading-color",
+                "uiName": "Text Color",
+                "cssName": "--text-color-h2",
+                "description": "The text color of H2 elements"
+            },
+            "lineHeight": {
+                "default": 1,
+                "uiName": "Line Height",
+                "cssName": "--line-height-h2",
+                "description": "The line height of H2 elements"
+            },
+            "margin": {
+                "default": "--headings-margin",
+                "uiName": "Margin",
+                "cssName": "--margin-h2",
+                "description": "The margin of H2 elements"
+            },
+            "fontFamily": {
+                "default": "--font-family-heading",
+                "uiName": "Font Family",
+                "cssName": "--font-family-h2",
+                "description": "The font family of H2 elements"
+            }
+        },
+        "h3": {
+            "size": {
+                "default": "1.4rem",
+                "uiName": "Font Size",
+                "cssName": "--font-size-h3",
+                "description": "The font size of H3 elements"
+            },
+            "weight": {
+                "default": 600,
+                "uiName": "Font Weight",
+                "cssName": "--font-weight-h3",
+                "description": "The font weight of H3 elements"
+            },
+            "style": {
+                "default": "normal",
+                "uiName": "Font Style",
+                "cssName": "--font-style-h3",
+                "description": "The font style of H3 elements"
+            },
+            "case": {
+                "default": "none",
+                "uiName": "Case",
+                "cssName": "--text-case-h3",
+                "description": "The text case of H3 elements"
+            },
+            "color": {
+                "default": "--heading-color",
+                "uiName": "Text Color",
+                "cssName": "--text-color-h3",
+                "description": "The text color of H3 elements"
+            },
+            "lineHeight": {
+                "default": 1,
+                "uiName": "Line Height",
+                "cssName": "--line-height-h3",
+                "description": "The line height of H3 elements"
+            },
+            "margin": {
+                "default": "--headings-margin",
+                "uiName": "Margin",
+                "cssName": "--margin-h3",
+                "description": "The margin of H3 elements"
+            },
+            "fontFamily": {
+                "default": "--font-family-heading",
+                "uiName": "Font Family",
+                "cssName": "--font-family-h3",
+                "description": "The font family of H3 elements"
+            }
+        },
+        "h4": {
+            "size": {
+                "default": "1.2rem",
+                "uiName": "Font Size",
+                "cssName": "--font-size-h4",
+                "description": "The font size of H4 elements"
+            },
+            "weight": {
+                "default": 400,
+                "uiName": "Font Weight",
+                "cssName": "--font-weight-h4",
+                "description": "The font weight of H4 elements"
+            },
+            "style": {
+                "default": "italic",
+                "uiName": "Font Style",
+                "cssName": "--font-style-h4",
+                "description": "The font style of H4 elements"
+            },
+            "case": {
+                "default": "none",
+                "uiName": "Case",
+                "cssName": "--text-case-h4",
+                "description": "The text case of H4 elements"
+            },
+            "color": {
+                "default": "--heading-color",
+                "uiName": "Text Color",
+                "cssName": "--text-color-h4",
+                "description": "The text color of H4 elements"
+            },
+            "lineHeight": {
+                "default": 1,
+                "uiName": "Line Height",
+                "cssName": "--line-height-h4",
+                "description": "The line height of H4 elements"
+            },
+            "margin": {
+                "default": "--headings-margin",
+                "uiName": "Margin",
+                "cssName": "--margin-h4",
+                "description": "The margin of H4 elements"
+            },
+            "fontFamily": {
+                "default": "--font-family-heading",
+                "uiName": "Font Family",
+                "cssName": "--font-family-h4",
+                "description": "The font family of H4 elements"
+            }
+        },
+        "h5": {
+            "size": {
+                "default": "1rem",
+                "uiName": "Font Size",
+                "cssName": "--font-size-h5",
+                "description": "The font size of H5 elements"
+            },
+            "weight": {
+                "default": 800,
+                "uiName": "Font Weight",
+                "cssName": "--font-weight-h5",
+                "description": "The font weight of H5 elements"
+            },
+            "style": {
+                "default": "normal",
+                "uiName": "Font Style",
+                "cssName": "--font-style-h5",
+                "description": "The font style of H5 elements"
+            },
+            "case": {
+                "default": "uppercase",
+                "uiName": "Case",
+                "cssName": "--text-case-h5",
+                "description": "The text case of H5 elements"
+            },
+            "color": {
+                "default": "--heading-color",
+                "uiName": "Text Color",
+                "cssName": "--text-color-h5",
+                "description": "The text color of H5 elements"
+            },
+            "lineHeight": {
+                "default": 1,
+                "uiName": "Line Height",
+                "cssName": "--line-height-h5",
+                "description": "The line height of H5 elements"
+            },
+            "margin": {
+                "default": "--headings-margin",
+                "uiName": "Margin",
+                "cssName": "--margin-h5",
+                "description": "The margin of H5 elements"
+            },
+            "fontFamily": {
+                "default": "--font-family-heading",
+                "uiName": "Font Family",
+                "cssName": "--font-family-h5",
+                "description": "The font family of H5 elements"
+            }
+        },
+        "p": {
+            "size": {
+                "default": "1rem",
+                "uiName": "Font Size",
+                "cssName": "--font-size-p",
+                "description": "The font size of P elements"
+            },
+            "weight": {
+                "default": 400,
+                "uiName": "Font Weight",
+                "cssName": "--font-weight-p",
+                "description": "The font weight of P elements"
+            },
+            "style": {
+                "default": "normal",
+                "uiName": "Font Style",
+                "cssName": "--font-style-p",
+                "description": "The font style of P elements"
+            },
+            "case": {
+                "default": "none",
+                "uiName": "Case",
+                "cssName": "--text-case-p",
+                "description": "The text case of P elements"
+            },
+            "color": {
+                "default": "--text-color",
+                "uiName": "Text Color",
+                "cssName": "--text-color-p",
+                "description": "The text color of P elements"
+            },
+            "lineHeight": {
+                "default": 1.6,
+                "uiName": "Line Height",
+                "cssName": "--line-height-p",
+                "description": "The line height of P elements"
+            },
+            "margin": {
+                "default": "--paragraph-margin",
+                "uiName": "Margin",
+                "cssName": "--margin-p",
+                "description": "The margin of P elements"
+            },
+            "fontFamily": {
+                "default": "--font-family-body",
+                "uiName": "Font Family",
+                "cssName": "--font-family-p",
+                "description": "The font family of P elements"
+            }
+        },
+        "link": {
+            "size": {
+                "default": "1rem",
+                "uiName": "Font Size",
+                "cssName": "--font-size-link",
+                "description": "The font size of A elements"
+            },
+            "weight": {
+                "default": 400,
+                "uiName": "Font Weight",
+                "cssName": "--font-weight-link",
+                "description": "The font weight of A elements"
+            },
+            "style": {
+                "default": "normal",
+                "uiName": "Font Style",
+                "cssName": "--font-style-link",
+                "description": "The font style of A elements"
+            },
+            "case": {
+                "default": "none",
+                "uiName": "Case",
+                "cssName": "--text-case-link",
+                "description": "The text case of A elements"
+            },
+            "color": {
+                "default": "--link-color",
+                "uiName": "Text Color",
+                "cssName": "--text-color-link",
+                "description": "The text color of A elements"
+            },
+            "lineHeight": {
+                "default": 1.6,
+                "uiName": "Line Height",
+                "cssName": "--line-height-link",
+                "description": "The line height of A elements"
+            },
+            "margin": {
+                "default": "--paragraph-margin",
+                "uiName": "Margin",
+                "cssName": "--margin-link",
+                "description": "The margin of A elements"
+            },
+            "fontFamily": {
+                "default": "--font-family-body",
+                "uiName": "Font Family",
+                "cssName": "--font-family-link",
+                "description": "The font family of A elements"
+            }
+        },
+        "list": {
+            "size": {
+                "default": "1rem",
+                "uiName": "Font Size",
+                "cssName": "--font-size-list",
+                "description": "The font size of LI elements"
+            },
+            "weight": {
+                "default": 400,
+                "uiName": "Font Weight",
+                "cssName": "--font-weight-list",
+                "description": "The font weight of LI elements"
+            },
+            "style": {
+                "default": "normal",
+                "uiName": "Font Style",
+                "cssName": "--font-style-list",
+                "description": "The font style of LI elements"
+            },
+            "case": {
+                "default": "none",
+                "uiName": "Case",
+                "cssName": "--text-case-list",
+                "description": "The text case of LI elements"
+            },
+            "color": {
+                "default": "--text-color",
+                "uiName": "Text Color",
+                "cssName": "--text-color-list",
+                "description": "The text color of LI elements"
+            },
+            "lineHeight": {
+                "default": 1.6,
+                "uiName": "Line Height",
+                "cssName": "--line-height-list",
+                "description": "The line height of LI elements"
+            },
+            "margin": {
+                "default": "--list-margin",
+                "uiName": "Margin",
+                "cssName": "--margin-list",
+                "description": "The margin of LI elements"
+            },
+            "fontFamily": {
+                "default": "--font-family-body",
+                "uiName": "Font Family",
+                "cssName": "--font-family-list",
+                "description": "The font family of LI elements"
+            }
+        }
+    },
+    "preBuiltThemes": [
+        {
+            "name": "Modern Minimalist",
+            "colors": {
+                "palette": {
+                    "white": "#ffffff",
+                    "offWhite": "#f7f7f7",
+                    "lightGray": "#e0e0e0",
+                    "mediumGray": "#9e9e9e",
+                    "darkGray": "#424242",
+                    "black": "#212121",
+                    "accent": "#03a9f4"
+                },
+                "bgColor": "--color-palette-white",
+                "bgColorSecondary": "--color-palette-offWhite",
+                "bgColorTertiary": "--color-palette-lightGray",
+                "textColor": "--color-palette-black",
+                "linkColor": "--color-palette-accent",
+                "headingColor": "--color-palette-darkGray",
+                "tagBg": "--color-palette-lightGray",
+                "borderColor": "--color-palette-lightGray",
+                "accentColor": "--color-palette-accent",
+                "accentColor2": "--color-palette-mediumGray"
+            },
+            "type": {
+                "fonts": {
+                    "body": "'Roboto', sans-serif",
+                    "heading": "'Montserrat', sans-serif"
+                }
+            },
+            "spacing": {
+                "headingsMargin": "1em 0 0.5em",
+                "paragraphMargin": "0 0 1em",
+                "listMargin": "0 0 1em",
+                "sectionsMargin": "2em 0",
+                "sectionsPadding": "1.5em",
+                "itemPadding": "0.75em"
+            },
+            "elements": {
+                "h1": {
+                    "size": "2.5rem",
+                    "weight": 700,
+                    "style": "normal",
+                    "case": "none",
+                    "color": "--heading-color",
+                    "lineHeight": 1.2,
+                    "margin": "--headings-margin",
+                    "fontFamily": "--font-family-heading"
+                },
+                "h2": {
+                    "size": "2rem",
+                    "weight": 600,
+                    "style": "normal",
+                    "case": "none",
+                    "color": "--heading-color",
+                    "lineHeight": 1.3,
+                    "margin": "--headings-margin",
+                    "fontFamily": "--font-family-heading"
+                },
+                "h3": {
+                    "size": "1.75rem",
+                    "weight": 600,
+                    "style": "normal",
+                    "case": "none",
+                    "color": "--heading-color",
+                    "lineHeight": 1.4,
+                    "margin": "--headings-margin",
+                    "fontFamily": "--font-family-heading"
+                },
+                "h4": {
+                    "size": "1.5rem",
+                    "weight": 600,
+                    "style": "normal",
+                    "case": "none",
+                    "color": "--heading-color",
+                    "lineHeight": 1.4,
+                    "margin": "--headings-margin",
+                    "fontFamily": "--font-family-heading"
+                },
+                "h5": {
+                    "size": "1.25rem",
+                    "weight": 600,
+                    "style": "normal",
+                    "case": "none",
+                    "color": "--heading-color",
+                    "lineHeight": 1.5,
+                    "margin": "--headings-margin",
+                    "fontFamily": "--font-family-heading"
+                },
+                "p": {
+                    "size": "1rem",
+                    "weight": 400,
+                    "style": "normal",
+                    "case": "none",
+                    "color": "--text-color",
+                    "lineHeight": 1.6,
+                    "margin": "--paragraph-margin",
+                    "fontFamily": "--font-family-body"
+                },
+                "link": {
+                    "size": "1rem",
+                    "weight": 400,
+                    "style": "normal",
+                    "case": "none",
+                    "color": "--link-color",
+                    "lineHeight": 1.6,
+                    "margin": "0",
+                    "fontFamily": "--font-family-body"
+                },
+                "list": {
+                    "size": "1rem",
+                    "weight": 400,
+                    "style": "normal",
+                    "case": "none",
+                    "color": "--text-color",
+                    "lineHeight": 1.6,
+                    "margin": "--list-margin",
+                    "fontFamily": "--font-family-body"
+                }
+            }
+        },
+        {
+            "name": "Bold and Vibrant",
+            "colors": {
+                "palette": {
+                    "deepPurple": "#4a148c",
+                    "purple": "#7c43bd",
+                    "lightPurple": "#b39ddb",
+                    "white": "#ffffff",
+                    "offWhite": "#f5f5f5",
+                    "black": "#212121",
+                    "accent": "#ffd54f"
+                },
+                "bgColor": "--color-palette-deepPurple",
+                "bgColorSecondary": "--color-palette-purple",
+                "bgColorTertiary": "--color-palette-lightPurple",
+                "textColor": "--color-palette-white",
+                "linkColor": "--color-palette-accent",
+                "headingColor": "--color-palette-accent",
+                "tagBg": "--color-palette-purple",
+                "borderColor": "--color-palette-lightPurple",
+                "accentColor": "--color-palette-accent",
+                "accentColor2": "--color-palette-lightPurple"
+            },
+            "type": {
+                "fonts": {
+                    "body": "'Open Sans', sans-serif",
+                    "heading": "'Poppins', sans-serif"
+                }
+            },
+            "spacing": {
+                "headingsMargin": "1.2em 0 0.6em",
+                "paragraphMargin": "0 0 1.2em",
+                "listMargin": "0 0 1.2em",
+                "sectionsMargin": "2.5em 0",
+                "sectionsPadding": "2em",
+                "itemPadding": "1em"
+            },
+            "elements": {
+                "h1": {
+                    "size": "3rem",
+                    "weight": 700,
+                    "style": "normal",
+                    "case": "uppercase",
+                    "color": "--heading-color",
+                    "lineHeight": 1.1,
+                    "margin": "--headings-margin",
+                    "fontFamily": "--font-family-heading"
+                },
+                "h2": {
+                    "size": "2.5rem",
+                    "weight": 700,
+                    "style": "normal",
+                    "case": "uppercase",
+                    "color": "--heading-color",
+                    "lineHeight": 1.2,
+                    "margin": "--headings-margin",
+                    "fontFamily": "--font-family-heading"
+                },
+                "h3": {
+                    "size": "2rem",
+                    "weight": 600,
+                    "style": "normal",
+                    "case": "none",
+                    "color": "--heading-color",
+                    "lineHeight": 1.3,
+                    "margin": "--headings-margin",
+                    "fontFamily": "--font-family-heading"
+                },
+                "h4": {
+                    "size": "1.75rem",
+                    "weight": 600,
+                    "style": "normal",
+                    "case": "none",
+                    "color": "--heading-color",
+                    "lineHeight": 1.4,
+                    "margin": "--headings-margin",
+                    "fontFamily": "--font-family-heading"
+                },
+                "h5": {
+                    "size": "1.5rem",
+                    "weight": 600,
+                    "style": "normal",
+                    "case": "none",
+                    "color": "--heading-color",
+                    "lineHeight": 1.5,
+                    "margin": "--headings-margin",
+                    "fontFamily": "--font-family-heading"
+                },
+                "p": {
+                    "size": "1.1rem",
+                    "weight": 400,
+                    "style": "normal",
+                    "case": "none",
+                    "color": "--text-color",
+                    "lineHeight": 1.6,
+                    "margin": "--paragraph-margin",
+                    "fontFamily": "--font-family-body"
+                },
+                "link": {
+                    "size": "1.1rem",
+                    "weight": 600,
+                    "style": "normal",
+                    "case": "none",
+                    "color": "--link-color",
+                    "lineHeight": 1.6,
+                    "margin": "0",
+                    "fontFamily": "--font-family-body"
+                },
+                "list": {
+                    "size": "1.1rem",
+                    "weight": 400,
+                    "style": "normal",
+                    "case": "none",
+                    "color": "--text-color",
+                    "lineHeight": 1.6,
+                    "margin": "--list-margin",
+                    "fontFamily": "--font-family-body"
+                }
+            }
+        },
+        {
+            "name": "Soft Pastel",
+            "colors": {
+                "palette": {
+                    "softPink": "#fce4ec",
+                    "lightPink": "#f8bbd0",
+                    "darkPink": "#ec407a",
+                    "softBlue": "#e3f2fd",
+                    "lightBlue": "#90caf9",
+                    "darkBlue": "#1e88e5",
+                    "offWhite": "#fafafa",
+                    "gray": "#757575"
+                },
+                "bgColor": "--color-palette-offWhite",
+                "bgColorSecondary": "--color-palette-softPink",
+                "bgColorTertiary": "--color-palette-softBlue",
+                "textColor": "--color-palette-gray",
+                "linkColor": "--color-palette-darkBlue",
+                "headingColor": "--color-palette-darkPink",
+                "tagBg": "--color-palette-lightPink",
+                "borderColor": "--color-palette-lightBlue",
+                "accentColor": "--color-palette-darkBlue",
+                "accentColor2": "--color-palette-darkPink"
+            },
+            "type": {
+                "fonts": {
+                    "body": "'Lato', sans-serif",
+                    "heading": "'Playfair Display', serif"
+                }
+            },
+            "spacing": {
+                "headingsMargin": "1.5em 0 0.75em",
+                "paragraphMargin": "0 0 1.5em",
+                "listMargin": "0 0 1.5em",
+                "sectionsMargin": "3em 0",
+                "sectionsPadding": "2em",
+                "itemPadding": "1em"
+            },
+            "elements": {
+                "h1": {
+                    "size": "3.5rem",
+                    "weight": 700,
+                    "style": "italic",
+                    "case": "none",
+                    "color": "--heading-color",
+                    "lineHeight": 1.2,
+                    "margin": "--headings-margin",
+                    "fontFamily": "--font-family-heading"
+                },
+                "h2": {
+                    "size": "2.75rem",
+                    "weight": 700,
+                    "style": "normal",
+                    "case": "none",
+                    "color": "--heading-color",
+                    "lineHeight": 1.3,
+                    "margin": "--headings-margin",
+                    "fontFamily": "--font-family-heading"
+                },
+                "h3": {
+                    "size": "2.25rem",
+                    "weight": 600,
+                    "style": "normal",
+                    "case": "none",
+                    "color": "--heading-color",
+                    "lineHeight": 1.4,
+                    "margin": "--headings-margin",
+                    "fontFamily": "--font-family-heading"
+                },
+                "h4": {
+                    "size": "1.75rem",
+                    "weight": 600,
+                    "style": "italic",
+                    "case": "none",
+                    "color": "--heading-color",
+                    "lineHeight": 1.5,
+                    "margin": "--headings-margin",
+                    "fontFamily": "--font-family-heading"
+                },
+                "h5": {
+                    "size": "1.5rem",
+                    "weight": 600,
+                    "style": "normal",
+                    "case": "none",
+                    "color": "--heading-color",
+                    "lineHeight": 1.6,
+                    "margin": "--headings-margin",
+                    "fontFamily": "--font-family-heading"
+                },
+                "p": {
+                    "size": "1.1rem",
+                    "weight": 400,
+                    "style": "normal",
+                    "case": "none",
+                    "color": "--text-color",
+                    "lineHeight": 1.7,
+                    "margin": "--paragraph-margin",
+                    "fontFamily": "--font-family-body"
+                },
+                "link": {
+                    "size": "1.1rem",
+                    "weight": 400,
+                    "style": "normal",
+                    "case": "none",
+                    "color": "--link-color",
+                    "lineHeight": 1.7,
+                    "margin": "0",
+                    "fontFamily": "--font-family-body"
+                },
+                "list": {
+                    "size": "1.1rem",
+                    "weight": 400,
+                    "style": "normal",
+                    "case": "none",
+                    "color": "--text-color",
+                    "lineHeight": 1.7,
+                    "margin": "--list-margin",
+                    "fontFamily": "--font-family-body"
+                }
+            }
+        }
+    ]
 }

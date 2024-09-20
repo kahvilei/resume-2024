@@ -1,146 +1,21 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
 
-:root {
-  /* Color Palette */
-  --color-1: #1e2132;
-  --color-2: #181b27;
-  --color-3: #11131c;
-  --color-4: #bec2da;
-  --color-5: #a64d79;
-  --color-6: #da98b9;
-  --color-7: #f2d3e7;
-  --color-8: #fff4f0;
-  --color-9: #adf5d3;
-  --color-10: #4decf1;
-  --color-11: #3A3F58;
-  --color-12: #4E5579;
-
-  /* Main fonts */
-  --font-heading: 'Nunito', sans-serif;
-  --font-body: 'Nunito', sans-serif;
-
-  /* Background Colors */
-  --bg-color: var(--color-1);
-  --bg-color-secondary: var(--color-2);
-  --bg-color-tertiary: var(--color-3);
-
-  /* Other Colors */
-  --tag-bg: var(--color-11);
-  --border-color: var(--color-12);
-
-  /* Font Families */
-  --font-family-body: var(--font-body);
-  --font-family-h1: var(--font-heading);
-  --font-family-h2: var(--font-heading);
-  --font-family-h3: var(--font-heading);
-  --font-family-h4: var(--font-heading);
-  --font-family-h5: var(--font-heading);
-  --font-family-p: var(--font-body);
-  --font-family-link: var(--font-body);
-  --font-family-list: var(--font-body);
-
-  /* Font Sizes */
-  --font-size-body: 1rem;
-  --font-size-h1: 2.5rem;
-  --font-size-h2: 1.6rem;
-  --font-size-h3: 1.4rem;
-  --font-size-h4: 1.2rem;
-  --font-size-h5: 1rem;
-  --font-size-p: 1rem;
-  --font-size-link: 1rem;
-  --font-size-list: 1rem;
-
-  /* Font Weights */
-  --font-weight-body: 400;
-  --font-weight-h1: 700;
-  --font-weight-h2: 600;
-  --font-weight-h3: 600;
-  --font-weight-h4: 400;
-  --font-weight-h5: 800;
-  --font-weight-p: 400;
-  --font-weight-link: 400;
-  --font-weight-list: 400;
-
-  /* Font Styles */
-  --font-style-body: normal;
-  --font-style-h1: italic;
-  --font-style-h2: normal;
-  --font-style-h3: normal;
-  --font-style-h4: italic;
-  --font-style-h5: normal;
-  --font-style-p: normal;
-  --font-style-link: normal;
-  --font-style-list: normal;
-
-  /* Font Cases */
-  --font-case-body: none;
-  --font-case-h1: uppercase;
-  --font-case-h2: uppercase;
-  --font-case-h3: none;
-  --font-case-h4: none;
-  --font-case-h5: uppercase;
-  --font-case-p: none;
-  --font-case-link: none;
-  --font-case-list: none;
-
-  /* Text Colors */
-  --color-body: var(--color-4);
-  --color-h1: var(--color-5);
-  --color-h2: var(--color-6);
-  --color-h3: var(--color-8);
-  --color-h4: var(--color-7);
-  --color-h5: var(--color-5);
-  --color-p: var(--color-4);
-  --color-link: var(--color-10);
-  --color-list: var(--color-4);
-
-  /* Line Heights */
-  --line-height-body: 1;
-  --line-height-h1: 1;
-  --line-height-h2: 1;
-  --line-height-h3: 1;
-  --line-height-h4: 1;
-  --line-height-h5: 1;
-  --line-height-p: 1.6;
-  --line-height-link: 1.6;
-  --line-height-list: 1.6;
-
-  /* Margins */
-  --margin-top-body: 0;
-  --margin-bottom-body: 0;
-  --margin-top-h1: 0.5rem;
-  --margin-bottom-h1: 0.5rem;
-  --margin-top-h2: 0.5rem;
-  --margin-bottom-h2: 0.5rem;
-  --margin-top-h3: 0.5rem;
-  --margin-bottom-h3: 0.5rem;
-  --margin-top-h4: 0.5rem;
-  --margin-bottom-h4: 0.5rem;
-  --margin-top-h5: 0.5rem;
-  --margin-bottom-h5: 0.5rem;
-  --margin-top-p: 0.5rem;
-  --margin-bottom-p: 0.5rem;
-  --margin-top-list: 0.5rem;
-  --margin-bottom-list: 0.5rem;
-}
-
 body {
   font-family: var(--font-family-body);
   font-size: var(--font-size-body);
   font-weight: var(--font-weight-body);
   font-style: var(--font-style-body);
-  color: var(--color-body);
+  color: var(--text-color-body);
   line-height: var(--line-height-body);
-  text-transform: var(--font-case-body);
-  background-color: var(--bg-color);
-  margin: 0;
+  text-transform: var(--text-case-body);
+  background-color: var(--color-palette-color1);
+  margin: var(--margin-body);
   padding: 0;
 }
 
 h1, h2, h3, h4, h5, p, ul, li {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 h1 {
@@ -148,11 +23,10 @@ h1 {
   font-size: var(--font-size-h1);
   font-weight: var(--font-weight-h1);
   font-style: var(--font-style-h1);
-  color: var(--color-h1);
+  color: var(--text-color-h1);
   line-height: var(--line-height-h1);
-  text-transform: var(--font-case-h1);
-  margin-top: var(--margin-top-h1);
-  margin-bottom: var(--margin-bottom-h1);
+  text-transform: var(--text-case-h1);
+  margin: var(--margin-h1);
 }
 
 h2 {
@@ -160,11 +34,10 @@ h2 {
   font-size: var(--font-size-h2);
   font-weight: var(--font-weight-h2);
   font-style: var(--font-style-h2);
-  color: var(--color-h2);
+  color: var(--text-color-h2);
   line-height: var(--line-height-h2);
-  text-transform: var(--font-case-h2);
-  margin-top: var(--margin-top-h2);
-  margin-bottom: var(--margin-bottom-h2);
+  text-transform: var(--text-case-h2);
+  margin: var(--margin-h2);
 }
 
 h3 {
@@ -172,11 +45,10 @@ h3 {
   font-size: var(--font-size-h3);
   font-weight: var(--font-weight-h3);
   font-style: var(--font-style-h3);
-  color: var(--color-h3);
+  color: var(--text-color-h3);
   line-height: var(--line-height-h3);
-  text-transform: var(--font-case-h3);
-  margin-top: var(--margin-top-h3);
-  margin-bottom: var(--margin-bottom-h3);
+  text-transform: var(--text-case-h3);
+  margin: var(--margin-h3);
 }
 
 h4 {
@@ -184,11 +56,10 @@ h4 {
   font-size: var(--font-size-h4);
   font-weight: var(--font-weight-h4);
   font-style: var(--font-style-h4);
-  color: var(--color-h4);
+  color: var(--text-color-h4);
   line-height: var(--line-height-h4);
-  text-transform: var(--font-case-h4);
-  margin-top: var(--margin-top-h4);
-  margin-bottom: var(--margin-bottom-h4);
+  text-transform: var(--text-case-h4);
+  margin: var(--margin-h4);
 }
 
 h5 {
@@ -196,11 +67,10 @@ h5 {
   font-size: var(--font-size-h5);
   font-weight: var(--font-weight-h5);
   font-style: var(--font-style-h5);
-  color: var(--color-h5);
+  color: var(--text-color-h5);
   line-height: var(--line-height-h5);
-  text-transform: var(--font-case-h5);
-  margin-top: var(--margin-top-h5);
-  margin-bottom: var(--margin-bottom-h5);
+  text-transform: var(--text-case-h5);
+  margin: var(--margin-h5);
 }
 
 p {
@@ -208,11 +78,10 @@ p {
   font-size: var(--font-size-p);
   font-weight: var(--font-weight-p);
   font-style: var(--font-style-p);
-  color: var(--color-p);
+  color: var(--text-color-p);
   line-height: var(--line-height-p);
-  text-transform: var(--font-case-p);
-  margin-top: var(--margin-top-p);
-  margin-bottom: var(--margin-bottom-p);
+  text-transform: var(--text-case-p);
+  margin: var(--margin-p);
 }
 
 a {
@@ -220,9 +89,9 @@ a {
   font-size: var(--font-size-link);
   font-weight: var(--font-weight-link);
   font-style: var(--font-style-link);
-  color: var(--color-link);
+  color: var(--text-color-link);
   line-height: var(--line-height-link);
-  text-transform: var(--font-case-link);
+  text-transform: var(--text-case-link);
   text-decoration: none;
 }
 
@@ -233,8 +102,7 @@ a:hover {
 ul, ol {
   list-style-type: none;
   padding-left: 0;
-  margin-top: var(--margin-top-list);
-  margin-bottom: var(--margin-bottom-list);
+  margin: var(--margin-list);
 }
 
 li {
@@ -242,14 +110,14 @@ li {
   font-size: var(--font-size-list);
   font-weight: var(--font-weight-list);
   font-style: var(--font-style-list);
-  color: var(--color-list);
+  color: var(--text-color-list);
   line-height: var(--line-height-list);
-  text-transform: var(--font-case-list);
+  text-transform: var(--text-case-list);
 }
 
 .page-header {
-  background: var(--bg-color-tertiary);
-  padding: 2rem;
+  background: var(--color-palette-color3);
+  padding: var(--sections-padding);
   display: flex;
   justify-content: center;
 }
@@ -262,62 +130,62 @@ li {
 .page-columns {
   display: flex;
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
+  margin: var(--sections-margin);
+  padding: var(--sections-padding);
 }
 
 .left-column {
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding-right: 2rem;
-  gap: 20px;
+  padding-right: var(--sections-padding);
+  gap: var(--item-padding);
 }
 
 .right-column {
   flex: 2;
   display: flex;
   flex-direction: column;
-  padding-left: 2rem;
-  gap: 20px;
+  padding-left: var(--sections-padding);
+  gap: var(--item-padding);
 }
 
 .skills-category, .project.item ul.skills-category {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
+  gap: var(--item-padding);
+  margin-bottom: var(--item-padding);
   list-style-type: none;
   padding: 0;
 }
 
 .skills-category li {
-  background-color: var(--tag-bg);
-  color: var(--color-body);
-  padding: 0.2rem 0.5rem;
+  background-color: var(--color-palette-color11);
+  color: var(--text-color-body);
+  padding: calc(var(--item-padding) / 2);
   border-radius: 4px;
   font-size: 0.9rem;
 }
 
 .experience.item {
-  margin-bottom: 2rem;
-  padding: 1.2rem;
-  border-left: 2px dotted var(--border-color);
+  margin-bottom: var(--sections-margin);
+  padding: var(--sections-padding);
+  border-left: 2px dotted var(--color-palette-color12);
 }
 
 .project.item, .education.item {
-  margin-bottom: 2rem;
-  padding: 1.2rem;
-  background-color: var(--bg-color-secondary);
+  margin-bottom: var(--sections-margin);
+  padding: var(--sections-padding);
+  background-color: var(--color-palette-color2);
 }
 
 .experience.item ul, .project.item ul {
-  padding-left: 1.5rem;
+  padding-left: var(--sections-padding);
   list-style-type: disc;
 }
 
 .experience.item li, .project.item li {
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--item-padding);
 }
 
 .experience.header {
@@ -328,16 +196,16 @@ li {
 
 .contact.list {
   display: flex;
-  gap: 20px;
+  gap: var(--item-padding);
 }
 
 .contact.list li {
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--item-padding);
 }
 
 .contact.list strong {
-  color: var(--color-h2);
-  margin-right: 0.5rem;
+  color: var(--text-color-h2);
+  margin-right: var(--item-padding);
 }
 
 @media (max-width: 768px) {
@@ -346,10 +214,10 @@ li {
   }
   .left-column {
     border-right: none;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--color-palette-color12);
     padding-right: 0;
-    padding-bottom: 2rem;
-    margin-bottom: 2rem;
+    padding-bottom: var(--sections-padding);
+    margin-bottom: var(--sections-margin);
   }
   .right-column {
     padding-left: 0;

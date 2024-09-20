@@ -16,7 +16,7 @@ const EducationList = ({ education }) => {
 };
 
 EducationList.propTypes = {
-  educations: PropTypes.arrayOf(
+  education: PropTypes.arrayOf(
     PropTypes.shape({
       Degree: PropTypes.string.isRequired,
       Major: PropTypes.string.isRequired,
